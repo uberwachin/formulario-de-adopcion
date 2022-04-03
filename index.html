@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link href="style.css" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Formulario de adopcion.</title>
+  </head>
+  <body>
+    <h1 id="title"> Formulario de adopcion </h1>
+    <p id="description"> Completa el siguiente formulario para que podamos contactarte!</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nombre </label>
+          <input
+          id="name"
+            type="text"
+            placeholder="Tu nombre"
+            required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email </label>
+          <input
+            id=email
+            type="email"
+            placeholder="kittenlover@michimail.com"
+            required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="age"> Edad </label>
+          <input
+            id="number"
+            type="number"
+            min="18"
+            max="99"
+            placeholder="Edad"
+            required
+            />
+          </div>
+
+      <div class="form-group">
+        <p> Cuanto tiempo diario le podes dedicar a la mascota?</p>
+        <select id="dropdown" required>
+          <option value="muy-poco"> Muy Poco </option>
+          <option value="poco">Poco</option>
+          <option value="normal">Normal</option>
+          <option value="mucho">Mucho</option>
+        </div>
+        </select>
+
+      <div class="form-group">
+        <p>Cual es tu horario de trabajo?</p>
+          <label>Mañana
+            <input
+              type="radio"
+              name="horario"
+              value="mañana"
+              ></label>
+          <label>Tarde
+            <input
+              type="radio"
+              name="horario"
+              value="tarde"
+            ></label>
+          <label>Noche
+            <input
+              type="radio"
+              name="horario"
+              value="noche"
+              ></label>
+      </div>
+
+      <div class="form-group">
+        <p>Que cosas tiene tu casa?<p>
+          <label>Ventanal
+            <input
+              type="checkbox"
+              name="ventanal"
+              value="ventanal"
+              ></label>
+          <label> Patio
+            <input
+              type="checkbox"
+              name="patio"
+              value="patio"
+              ></label>
+      </div>
+
+      <div class="form-group">
+        <label>Comentarios</label><br>
+          <textarea
+          class="form-group"2
+          placeholder="Ej:&quot;Estoy interesado en adoptar un gato adulto porque etc etc etc...&quot;"
+          sentences
+          required
+           ></textarea>
+      </div>
+
+      <input id="submit" type="submit"/>
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+  </body>
+</html>
